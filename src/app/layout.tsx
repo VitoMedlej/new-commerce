@@ -9,8 +9,8 @@ import ContextWrapper from '@/context/Contexts'
 import Popup from '@/Components/Popup/Popup'
 
 export const metadata = {
-    title: 'The Craft Room | Arts & Crafts Supplies, Cricut Products',
-    description: `Shop at The Craft Room, where creativity becomes reality. Find all your arts and
+    title: 'phoenix-blaze | Arts & Crafts Supplies, Cricut Products',
+    description: `Shop at phoenix-blaze, where creativity becomes reality. Find all your arts and
      crafts supplies, including best Cricut products in Lebanon`,
     icons: {
         icon: `https://ucarecdn.com/f21fe250-e19c-4fd7-b4e7-bf1b246a3640/favicon.jpeg`

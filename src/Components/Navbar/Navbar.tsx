@@ -26,14 +26,9 @@ import { useCartContext, useDrawerContext } from '@/context/Contexts';
 
 export const categories = [
     'New Arrivals',
-    `Hot offers`,
-`Cricut machines`, 
-`Heat presses`,
-`Materials`,
-`Tools and Accessories` ,
-`Printers`,
-`Customizable Blanks`,
-`Art supplies`,
+    'Men',
+    'Women',
+    'Children'
 ]
 export default function Navbar() {
     const {open, setOpen} = useDrawerContext();
@@ -113,7 +108,7 @@ export default function Navbar() {
     <img
         className='img'
         src={`/icon.png`}
-        alt="the craft room logo"/>
+        alt="phoenix-blaze logo"/>
 </Box>
 </Link>
 <NavButtom/>
@@ -126,7 +121,10 @@ export default function Navbar() {
                 <Box
                     sx={{
                     px:1,
-                    display:{xs:'flex',md:'none'},
+                    display:{xs:'flex'
+                    // ,md:'none'
+                }
+                    ,
 
                     flex: 1,
                     flexWrap: 'wrap',
@@ -158,12 +156,12 @@ export default function Navbar() {
 
                             // margin: '0.1em',
                             display: {
-                                md: 'none'
+                                // md: 'none'
                             }
                         }}>
                             <AiOutlineHome color='black'/>
                         </IconButton>
-                        <IconButton
+                        {/* <IconButton
                             onClick={() => router.push('/profile')}
                             sx={{
                             color: 'black'
@@ -171,7 +169,7 @@ export default function Navbar() {
 
                                 <AiOutlineHeart color='black'/>
                           
-                        </IconButton>
+                        </IconButton> */}
                         <IconButton
                             onClick={() => setCartOpen(!cartOpen)}
                             sx={{
@@ -196,7 +194,7 @@ export default function Navbar() {
                             color: 'black',
                             // margin: '0.1em',
                             display: {
-                                md: 'none'
+                                // md: 'none'
                             }
                         }}>
                             <IoIosMenu color='black'/>
@@ -219,17 +217,13 @@ export default function Navbar() {
 
                 </Box>
 
-                <Box
+                {/* <Box
                     sx={{
                     px:1,
                     display:{xs:'none',md:'flex'},
 
-                    // flex: 1,
                     flexWrap: 'wrap',
-                    // justifyContent: {
-                    //     xs: 'right',
-                    //     sm: 'end'
-                    // },
+              
                  
                 }}>
  
@@ -238,7 +232,6 @@ export default function Navbar() {
                         display: {
                             xs: 'flex'
                         },
-                        // justifyContent: 'end'
                     }}
                         className='flex right'>
  
@@ -251,27 +244,15 @@ export default function Navbar() {
                                 <CiSearch color='black'/>
                           
                         </IconButton>
-                        <IconButton
-                            onClick={() => router.push('/profile')}
-                            sx={{
-                            color: 'black'
-                        }}>
-
-                                <AiOutlineHeart color='black'/>
-                          
-                        </IconButton>
+              
 
                         <IconButton
                             onClick={() => setCartOpen(!cartOpen)}
                             sx={{
                             color: 'black'
                         }}>
-                            {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
                                 <CiShoppingCart color='black'/>
-                            {/* </Badge> */}
-                            {/* <Typography>
-                                Cart
-                            </Typography> */}
+                      
                             </IconButton>
 
 
@@ -282,7 +263,6 @@ export default function Navbar() {
                             aria-label="menu"
                             sx={{
                             color: 'black',
-                            // margin: '0.1em',
                          
                         }}>
                             <IoIosMenu color='black'/>
@@ -290,7 +270,7 @@ export default function Navbar() {
                     
                     </Box>
 
-                </Box>
+                </Box> */}
              <SearchInput
 mobile
                     /> 

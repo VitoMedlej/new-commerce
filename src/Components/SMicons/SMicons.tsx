@@ -8,11 +8,11 @@ import {BsTiktok} from 'react-icons/bs';
 const sm = [
     {
         Icon:FaInstagram,
-        href:'https://www.instagram.com/thecraftroom.lb/?next=https%3A%2F%2Fwww.instagram.com%2Fticketshopcol%2Fp%2FBwKRsoxI8Tf%2F%3Fhl%3Dcs%26__coig_login%3D1'
+        href:'https://www.instagram.com/phoenix-blaze.lb/?next=https%3A%2F%2Fwww.instagram.com%2Fticketshopcol%2Fp%2FBwKRsoxI8Tf%2F%3Fhl%3Dcs%26__coig_login%3D1'
     },
-    {Icon:FaWhatsapp,href:'https://wa.me/+96103874743'},
+    {Icon:FaWhatsapp,href:'https://wa.me/+961123456'},
     {
-      Icon :BsTiktok ,href: `tiktok.com/@thecraftroomlb`,
+      Icon :BsTiktok ,href: `tiktok.com/@phoenix-blazelb`,
     },
     {
 

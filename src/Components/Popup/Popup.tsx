@@ -37,7 +37,7 @@ const Index = () => {
 
       <Box sx={{width:'100%',px:1,height:'100%'}} className='flex col text-center items-center center'>
         <Typography className='clr' sx={{fontSize:'1.5em',fontWeight:600}}>
-          WELCOME TO THE CRAFT ROOM!
+          WELCOME TO phoenix-blaze!
         </Typography>
         <Typography sx={{fontSize:'.8em',color:'gray',fontWeight:100}} >
         Please login to never miss out on any amazing offers!

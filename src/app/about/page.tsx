@@ -4,11 +4,11 @@ import { Container, Box, Typography, Divider } from '@mui/material'
 import React from 'react'
 
 const text = [
-    `TheCraftRoom is a proudly Lebanese owned family company that has been operating since 2008. The business has grown organically to now be Lebanese first online craft store with over 700 brands and products.`,
+    `phoenix-blaze is a proudly Lebanese owned family company that has been operating since 2008. The business has grown organically to now be Lebanese first online craft store with over 700 brands and products.`,
     `Our vision is to provide you with the widest range of crafting products at our best prices and quick order despatch.`,
     `Our buyers scour the world to find you the hottest new products and offer them to you as quickly as we can. We aim offer you more new products and sooner. Be first with the greatest range of new products offered to you every Wednesday our What's New Wednesday emails.`,
     `Our everyday prices are great but we don’t stop there. We work hard to find you the best discounts we can. Save more with our awesome specials every Saturday in our Super Saturday Specials emails. `,
-    `Why buy from TheCraftRoom?
+    `Why buy from phoenix-blaze?
     The one-stop shop for all your crafting needs
     Great value and awesome prices
     Great Lebanese customer service and next business day postage
@@ -22,7 +22,7 @@ const Index = () => {
             ABOUT US
         </Typography>
         <Box sx={{width:'100%',height:'400px'}}>
-            <img src="https://www.thecraftroom-lb.com/icon.png" alt="" className="img contain" />
+            <img src="https://www.phoenix-blaze-lb.com/icon.png" alt="" className="img contain" />
         </Box>
     
         <Box sx={{my:4}}>

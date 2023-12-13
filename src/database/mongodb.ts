@@ -13,7 +13,7 @@ const uri = `mongodb+srv://rickcarl1239:CBvgEZI5aYk5UsUq@cluster0.ya6cbro.mongod
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 client.connect((err:any) => {
     if (err) {
-        //   const collection = client.db("Ecom").collection("Users");
+        //   const collection = client.db("ACSS").collection("Users");
         //   console.log('collection: ', collection);
         // perform actions on the collection object
         client.close();

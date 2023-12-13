@@ -42,7 +42,7 @@ export default function TemporaryDrawer() {
             <Drawer  anchor={'right'} open={cartOpen} onClose={toggleDrawer(false)}>
                 <Box
                     sx={{
-                    // maxWidth: '500px',
+                    maxWidth: '400px',
                     width: '100%',
 
                     margin: '0 auto'

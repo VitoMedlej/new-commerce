@@ -44,7 +44,7 @@ export async function GET(req : NextRequest, res : NextApiResponse) {
         let filterBySearch = search && search?.length > 1; 
         
     const ProductsCollection = await client
-        .db("CRAFT")
+        .db("ACSS")
         .collection("Products");
     let products : any = []
     

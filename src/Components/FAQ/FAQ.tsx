@@ -27,11 +27,11 @@ const FAQs = [
   },
   {
     "Q": "6. Pricing",
-    "A": "All prices are in US Dollars* and are inclusive of VAT and are subject to change without prior notice.\n\nShipping is Free for all orders over $45 within Lebanon, and is only $3 for orders under $45 regardless of size. At The Craft Room we aim to keep our prices as low as we can and pass all savings onto our customers.\n\nSale items may return to pre-sale prices after the sale has finished. Once again, the correct price will always be the one listed when you add the item to the cart."
+    "A": "All prices are in US Dollars* and are inclusive of VAT and are subject to change without prior notice.\n\nShipping is Free for all orders over $45 within Lebanon, and is only $3 for orders under $45 regardless of size. At phoenix-blaze we aim to keep our prices as low as we can and pass all savings onto our customers.\n\nSale items may return to pre-sale prices after the sale has finished. Once again, the correct price will always be the one listed when you add the item to the cart."
   },
   {
     "Q": "7. Do you ship internationally?",
-    "A": "TheCraftRoom is a Lebanese-owned company, and we ship to Middle Eastern and North African countries.\n\nYou can call or email us for the shipping rates."
+    "A": "phoenix-blaze is a Lebanese-owned company, and we ship to Middle Eastern and North African countries.\n\nYou can call or email us for the shipping rates."
   },
   {
     "Q": "8. Can I make a change to my order?",
@@ -43,19 +43,19 @@ const FAQs = [
   },
   {
     "Q": "10. Do you sell wholesale?",
-    "A": "We do not sell wholesale. TheCraftRoom is a retailer and does not offer wholesale pricing. We do offer discounts on some bulk purchases. Contact Customer Support to see if this option is available for your particular purchase."
+    "A": "We do not sell wholesale. phoenix-blaze is a retailer and does not offer wholesale pricing. We do offer discounts on some bulk purchases. Contact Customer Support to see if this option is available for your particular purchase."
   },
   {
     "Q": "11. Is CraftOnline a secure site?",
-    "A": "TheCraftRoom is very concerned about site security on the Internet today. That is why we have made sure that we have followed and surpassed all industry standards necessary for a secure site. These include encrypting all data that you give to us, processing your information in a safe and responsible manner, and not sharing any information that has been given to us by you, our customers.\n\nIn line with our strict security policy, we also offer a wide range of payment options, including Bank Transfer, Cheque, Money transfer through trusted channels, and even the option to 'Call us 'where you can finalize your order and call us with your way of payment.\n\nWe want you to feel confident when ordering from The Craft Room, and we are doing everything we can to continue to operate a secure site. If you have any other questions concerning site security, please feel free to email us at Customer Service."
+    "A": "phoenix-blaze is very concerned about site security on the Internet today. That is why we have made sure that we have followed and surpassed all industry standards necessary for a secure site. These include encrypting all data that you give to us, processing your information in a safe and responsible manner, and not sharing any information that has been given to us by you, our customers.\n\nIn line with our strict security policy, we also offer a wide range of payment options, including Bank Transfer, Cheque, Money transfer through trusted channels, and even the option to 'Call us 'where you can finalize your order and call us with your way of payment.\n\nWe want you to feel confident when ordering from phoenix-blaze, and we are doing everything we can to continue to operate a secure site. If you have any other questions concerning site security, please feel free to email us at Customer Service."
   },
   {
     "Q": "12. What is your return policy?",
-    "A": "Goods found to have manufacturing defects will be replaced at no charge. All claims must be approved for return prior to the return of the goods. Claims for faulty stock must be reported to TheCraftRoom within three (3) days of the receipt of the order. A copy of the relevant invoice must accompany returned items."
+    "A": "Goods found to have manufacturing defects will be replaced at no charge. All claims must be approved for return prior to the return of the goods. Claims for faulty stock must be reported to phoenix-blaze within three (3) days of the receipt of the order. A copy of the relevant invoice must accompany returned items."
   },
   {
     "Q": "13. Where are you located?",
-    "A": "We are located in The South of Lebanon.\n\nOur distribution and warehouse address is:\n\nTheCraftRoom\nSidon-Tyre highway\nAl Rawda Street."
+    "A": "We are located in The South of Lebanon.\n\nOur distribution and warehouse address is:\n\nphoenix-blaze\nSidon-Tyre highway\nAl Rawda Street."
   },
   {
     "Q": "14. Will I have to pay VAT on my order?",

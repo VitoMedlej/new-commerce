@@ -18,11 +18,11 @@ const Footer = () => (
               {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='/icon.png' alt="the craft room Logo" />
+            <img className='img ' src='/icon.png' alt="phoenix-blaze Logo" />
             </Link>
           </div>
           <Typography component='h1' sx={{ fontSize: '.9em',color:"2b2b2b" }}  className='footer-p '>
-          Welcome to The Craft Room, where creativity becomes reality. Located in Lebanon, we offer a wide selection of arts and crafts supplies, including Cricut products, to help you unleash your creativity. Whether you’re a professional artist or just starting out, we have everything you need to bring your ideas to life. Shop now and discover the endless possibilities of crafting.
+          Welcome to phoenix-blaze, where creativity becomes reality. Located in Lebanon, we offer a wide selection of arts and crafts supplies, including Cricut products, to help you unleash your creativity. Whether you’re a professional artist or just starting out, we have everything you need to bring your ideas to life. Shop now and discover the endless possibilities of crafting.
           </Typography>
           <SMicons/>
 
@@ -50,13 +50,13 @@ const Footer = () => (
      
           <ul  className='ul-white' style={{color:'black'}}>
             <li className='link-title'>Contact</li>
-            <li><Link href="mailto:sales@thecraftroom-lb.com">sales@thecraftroom-lb.com</Link></li>
+            <li><Link href="mailto:sales@phoenix-blaze-lb.com">sales@phoenix-blaze-lb.com</Link></li>
             
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
 
-            <li><a href="https://www.instagram.com/thecraftroom.lb/?next=https%3A%2F%2Fwww.instagram.com%2Fticketshopcol%2Fp%2FBwKRsoxI8Tf%2F%3Fhl%3Dcs%26__coig_login%3D1" target="_blank" rel="noreferrer" >@thecraftroom</a></li>
+            <li><a href="https://www.instagram.com/phoenix-blaze.lb/?next=https%3A%2F%2Fwww.instagram.com%2Fticketshopcol%2Fp%2FBwKRsoxI8Tf%2F%3Fhl%3Dcs%26__coig_login%3D1" target="_blank" rel="noreferrer" >@phoenix-blaze</a></li>
             <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer" target='_blank' >Call Us</a></li>
-            {/* <li><a href={`http://tiktok.com/@thecraftroomlb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
+            {/* <li><a href={`http://tiktok.com/@phoenix-blazelb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
           </ul>
         </div>
         <Box className='flex wrap'> 
@@ -85,7 +85,7 @@ const Footer = () => (
         <p>Website Developed By{' '}
           <a style={{ color: 'black' }} href={`${'https://www.onbeirut.com'}`}>OnBeirut Agency </a></p>
         <p>
-        {' | '} ©Thecraftroom-lb
+        {' | '} ©phoenix-blaze-lb
         </p>
       </div>
     </div>
