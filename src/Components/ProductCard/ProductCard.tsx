@@ -159,7 +159,7 @@ title: string,
                         color:'white',
                         width:'70%',
                    
-                    borderRadius:25,
+                    borderRadius:0,
                   
                  
                 }}>

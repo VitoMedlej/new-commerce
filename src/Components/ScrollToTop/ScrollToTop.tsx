@@ -25,7 +25,7 @@ const ScrollUp = () => {
     <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} target='_blank' rel='noopener'>
 
     <Btn sx={{ border:'1px solid transparent',
-    borderRadius:25,
+    borderRadius:0,
     padding:0,':hover':{background:'transparent'},background:'none'}}>
       <Box className='center flex align-center' sx={{width:'30px'}}>
 

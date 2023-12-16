@@ -27,9 +27,10 @@ const ProductCollection = ({sx,delay,Collectiontitle,data,setQuickView} : {
             my: '3em',
             ...sx,
         }}>
-       
+            <Box className="flex justify-between space-between w100">
+
             <Typography
-                className='sectionTitle text-center center auto box'
+                className='sectionTitle   box'
                 sx={{
              
                 fontSize: {
@@ -37,16 +38,18 @@ const ProductCollection = ({sx,delay,Collectiontitle,data,setQuickView} : {
                     sm: '1.4em'
                 },
                 padding:.5,
-                fontWeight: '300'
+                fontWeight: '500'
             }}>
               {Collectiontitle}
             </Typography>
             <Link  href='/collection/products' className="decor-none">
 
-<Btn sx={{borer:'none',background:'transparent', color:'#2ec6d4',borderRadius:25,margin:'.25em auto'}}>
+<Btn sx={{borer:'none',background:'transparent', color:'red',borderRadius:0,margin:'.25em auto'}}>
     All Products
 </Btn>
 </Link>
+      
+</Box>
             {/* <Divider  light /> */}
 
             

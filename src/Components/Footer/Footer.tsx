@@ -59,7 +59,7 @@ const Footer = () => (
             {/* <li><a href={`http://tiktok.com/@phoenix-blazelb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
           </ul>
         </div>
-        <Box className='flex wrap'> 
+        {/* <Box className='flex wrap'> 
                         <Typography sx={{width:'100%',fontWeight:500,pb:.5}}>
                             We Also Accept:
                         </Typography>
@@ -76,7 +76,7 @@ const Footer = () => (
 <img src="https://ucarecdn.com/a8afd824-ff38-4683-b789-e0868f7242f7/WU.png" alt="Western Union Money Payment method logo" className="img contain" />
 </Box>
                         </Box>
-                    </Box>
+                    </Box> */}
       </div>
     </div>
 

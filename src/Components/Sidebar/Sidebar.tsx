@@ -92,7 +92,7 @@ useEffect(()=>{
           </ListItem>
 
 
-                  <Accordion sx={{border:'none',boxShadow:'none',}}>
+                  {/* <Accordion sx={{border:'none',boxShadow:'none',}}>
             
                   <AccordionSummary
           expandIcon={<AiOutlineArrowUp />}
@@ -149,11 +149,11 @@ key={i}>
 
 
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
 
 
 
-      <Accordion sx={{border:'none',boxShadow:'none',}}>
+      {/* <Accordion sx={{border:'none',boxShadow:'none',}}>
             
             <AccordionSummary
     expandIcon={<AiOutlineArrowUp />}
@@ -210,12 +210,12 @@ key={i}>
 
 
   </AccordionDetails>
-</Accordion>
+</Accordion> */}
 
 
 
 
-<Accordion sx={{border:'none',boxShadow:'none',}}>
+{/* <Accordion sx={{border:'none',boxShadow:'none',}}>
             
             <AccordionSummary
     expandIcon={<AiOutlineArrowUp />}
@@ -271,22 +271,27 @@ key={i}>
 
 
   </AccordionDetails>
-</Accordion>
+</Accordion> */}
        {[
-    'New Arrivals',
-    `Hot offers`,
-`Cricut machines`, 
-`Heat presses`,
+//     'New Arrivals',
+//     `Hot offers`,
+// `Cricut machines`, 
+// `Heat presses`,
 
-`Printers`,
-`Customizable Blanks`,
+// `Printers`,
+// `Customizable Blanks`,
+
+'New Arrivals',
+'Men',
+'Women',
+'Children'
 
 ].map((text, index) => {
           if (!text) return;
           return <ListItem
         
           onClick={()=>{setOpen(false);
-            router.push(`/${text.replace(/ /g, '-').toLocaleLowerCase()}/products`)}}
+            router.push(`/${encodeURIComponent(`${text}`).toLocaleLowerCase()}/products`)}}
           key={text} disablePadding>
             <ListItemButton>
               {/* <ListItemIcon>
@@ -301,22 +306,7 @@ key={i}>
         
         }
       </List>
-        {/* <SMicons/> */}
-        <Link href='/about' className='decor-none' style={{color:'black',padding:' .25em 0'}}>
-        <ListItemButton>
-        
-        <Typography sx={{ color:'black',fontWeight:600}}>
-         About Us
-            </Typography>
-            </ListItemButton>
-      </Link>
-      {!localUser &&   <Btn sx={{width:'90%',mt:1,mx:'auto'}} className='' onClick={()=>{setOpen(false);router.push('/account/login')}}>
-          Login
-        </Btn>}
-        <Btn sx={{color:'white',background:'red',borderColor:'red',gap:.5,width:'90%',mt:1,mx:'auto'}} className='' onClick={()=>{setOpen(false);router.push('/profile')}}>
-         My Favorites
-         <AiOutlineHeart/>
-        </Btn>
+ 
       <Divider />
       
     </Box>

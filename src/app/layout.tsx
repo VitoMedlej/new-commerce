@@ -13,7 +13,7 @@ export const metadata = {
     description: `Shop at phoenix-blaze, where creativity becomes reality. Find all your arts and
      crafts supplies, including best Cricut products in Lebanon`,
     icons: {
-        icon: `https://ucarecdn.com/f21fe250-e19c-4fd7-b4e7-bf1b246a3640/favicon.jpeg`
+        icon: `https://ucarecdn.com/92560bb1-4dac-49ac-8571-f69c27574e0b/phoenixblaze.PNG`
     }
 }
 
@@ -23,11 +23,9 @@ export default function RootLayout({children} : {
     return (
         <html lang="en">
             <head>
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com"/>
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap"
-                    rel="stylesheet"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet"/>
             </head>
 
             <body className='relative'>
