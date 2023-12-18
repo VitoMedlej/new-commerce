@@ -81,7 +81,7 @@ export default function Navbar() {
                     height:'20px',
             py:.45}} >
             <Typography sx={{fontSize:{xs:'.7em',sm:'.8em'}}} className='center text-center'>
-            Free Delivery On Orders Over $45 In Lebanon 
+            Welcome to Phoenix Blaze! Browse The Highest Quality Products In Lebanon🛒
             </Typography>
               
         </Box>
@@ -145,7 +145,7 @@ export default function Navbar() {
                              
                         
                              
-                             <IconButton
+                             {/* <IconButton
                             onClick={() => router.push('/')}
                             size="large"
                             edge="start"
@@ -160,7 +160,7 @@ export default function Navbar() {
                             }
                         }}>
                             <AiOutlineHome color='black'/>
-                        </IconButton>
+                        </IconButton> */}
                         {/* <IconButton
                             onClick={() => router.push('/profile')}
                             sx={{

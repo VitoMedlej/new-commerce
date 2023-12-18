@@ -85,6 +85,7 @@ title: string,
                     <Typography
                     sx={{
                     fontWeight: '300',
+                    color:'red',
                     fontSize: '.76em'
                 }}>
                     {category}
@@ -137,7 +138,7 @@ title: string,
                     sx={{
                         display: inStock !== false ? 'flex':'none',
                         my: .5,
-                    color:'green',
+                    // color:'green',
                     fontWeight: '400',
                     fontSize: {xs:'1.01em',sm:'1.16em'}
                 }}>
@@ -156,7 +157,8 @@ title: string,
                      onClick={()=>addToCart(1,_id,{title,category,img:images[0],_id,price: Number(newPrice) ?Number(newPrice) : price},true)}
                     
                     sx={{
-                        color:'white',
+                        color:'black',
+                        borderColor:'black',
                         width:'99%',
                    
                     borderRadius:0,

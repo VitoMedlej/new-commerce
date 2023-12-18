@@ -50,7 +50,7 @@ const Footer = () => (
      
           <ul  className='ul-white' style={{color:'black'}}>
             <li className='link-title'>Contact</li>
-            <li><Link href="mailto:sales@phoenix-blaze-lb.com">sales@phoenix-blaze-lb.com</Link></li>
+            <li><Link href="mailto:sales@phoenixBlaze-lb.com">sales@phoenixBlaze-lb.com</Link></li>
             
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
 
@@ -85,7 +85,8 @@ const Footer = () => (
         <p>Website Developed By{' '}
           <a style={{ color: 'black' }} href={`${'https://www.onbeirut.com'}`}>OnBeirut Agency </a></p>
         <p>
-        {' | '} ©phoenix-blaze-lb
+        {' | '} 
+        ©phoenixBlaze-lb
         </p>
       </div>
     </div>

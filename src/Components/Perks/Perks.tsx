@@ -6,16 +6,20 @@ const Perks = () => {
     const items = [
      
         {
-            title: 'Best Arts & Crafts Supplies',
-            icon : 'https://www.svgrepo.com/show/454415/draw-mypaint-software.svg'
+            title: 'Best Accessories Available',
+            icon : 'https://www.svgrepo.com/show/427671/accessories-eyeglasses-fashion.svg'
         },
         {
-            title: 'Sign Up For Our News Letter',
-            icon : 'https://www.svgrepo.com/show/477054/email-download.svg'
+            title: 'Affordable Prices',
+            icon : 'https://www.svgrepo.com/show/513339/price-tag.svg'
         },
         {
-            title: 'Delivery All Over Lebanon',
-            icon : 'https://www.svgrepo.com/show/401385/delivery-truck.svg'
+            title: 'High Quality Products',
+            icon : 'https://www.svgrepo.com/show/425182/accessories-watch-ecommerce.svg'
+        },
+        {
+            title: 'Delivery Anywhere in Lebanon',
+            icon : 'https://www.svgrepo.com/show/398058/pickup-truck.svg'
         },
 
     ]
@@ -23,7 +27,7 @@ const Perks = () => {
     <Box className='w100' sx={{px:1,py:8}}>
         <Box>
         <Typography
-                className='sectionTitle center auto text-center box'
+                className='sectionTitle  box'
                 sx={{
                   pt:'.5em',
                   mx:1,
@@ -33,9 +37,10 @@ const Perks = () => {
                     xs: '1.2em',
                     sm: '1.4em'
                 },
-                fontWeight: '300'
+                py:2,
+                fontWeight: '500'
             }}>
-Advantages
+Why Choose Us 
             </Typography>
         </Box>
         <Box  className='flex wrap gap auto row justify-between'>
@@ -44,8 +49,8 @@ Advantages
            items.map(i=>{
                 return <Box key={i.title} className='center items-center auto flex col' sx={{
                     py:2,
-                    width:{xs:'49%',sm:'32%'}}}>
-                    <Box sx={{width:'100px'}}>
+                    width:{xs:'32%',sm:'22%'}}}>
+                    <Box sx={{width:'80px'}}>
                         <img src={i.icon} alt="" className="img contain" />
                     </Box>
                     <Typography className='text-center' sx={{fontSize:'1.05em'}}  component={'h1'}>{i.title}</Typography>

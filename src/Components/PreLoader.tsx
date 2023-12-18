@@ -212,10 +212,13 @@ onClick={()=>router.push(`${'cricut machines'.replace(/ /g, '-').toLocaleLowerCa
         
 
         
-        {/* <Perks/> */}
+        <Box>
+          <img src="https://ucarecdn.com/e9c63dfe-42b7-4048-a536-15dbde376c43/ad.JPG" alt="" className="img" />
+        </Box>
+        <Perks/>
 
     </Container>
-        <ContactSection/>
+        {/* <ContactSection/> */}
   </Box>
   )
 }

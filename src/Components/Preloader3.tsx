@@ -18,9 +18,13 @@ const Preloader3 = ({res}:{res:any}) => {
             text: ""
         },
         {
-            img: "https://scontent.fbey24-1.fna.fbcdn.net/v/t31.18172-8/17814600_1847111438874077_155868236703513607_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=2be8e3&_nc_ohc=4WtIz6t_OncAX9y0Yvb&_nc_ht=scontent.fbey24-1.fna&oh=00_AfCadQOksvI3kB1MflMPObgJcf-rAwATFe_NPa4_ludDoA&oe=65A7F8C2",
+            img: "https://www.footlocker.ph/media/weltpixel/owlcarouselslider/images/i/m/img_2458_1.jpg",
             text: ""
         },
+        // {
+        //     img: "https://scontent.fbey24-1.fna.fbcdn.net/v/t31.18172-8/17814600_1847111438874077_155868236703513607_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=2be8e3&_nc_ohc=4WtIz6t_OncAX9y0Yvb&_nc_ht=scontent.fbey24-1.fna&oh=00_AfCadQOksvI3kB1MflMPObgJcf-rAwATFe_NPa4_ludDoA&oe=65A7F8C2",
+        //     text: ""
+        // },
           ]
         
     )
