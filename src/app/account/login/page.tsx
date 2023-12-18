@@ -85,8 +85,8 @@ const [error, setError] = useState('');
         const res = await req.json();
         console.log('res: ', res);
         if (res?.success && res?.jwt  && res?.jwt?.length > 5  && res?.user) {
-            localStorage.setItem('jciowje12xz',JSON.stringify(res?.jwt))
-            localStorage.setItem('24j1i2cj4io-dadxzazd213',JSON.stringify(res?.user))
+            localStorage.setItem('Km0v2zT1mg',JSON.stringify(res?.jwt))
+            localStorage.setItem('IONn41-rKV2Vda',JSON.stringify(res?.user))
             router.push('/profile')
         }
         else {

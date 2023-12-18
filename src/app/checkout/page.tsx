@@ -58,7 +58,7 @@ export default function Checkout() {
 
     const handleNext = () => {
       if (info && info.email && info.firstName && info.lastName && info.address1 && info.phone) {
-        saveState('order-bag',info)
+        saveState('KJc425-bG',info)
         setActiveStep(activeStep + 1);
       
       } 
@@ -72,7 +72,7 @@ export default function Checkout() {
 
 
     const saveOrder = async () => {
-      const products = loadState('shping-list')
+      const products = loadState('L0I3t-30p')
  
 
       const total = 10
@@ -88,8 +88,8 @@ export default function Checkout() {
             body: JSON.stringify({order:{info,products,total}})
         });
   const content = await rawResponse.json();
-  saveState('order-bag',null)
-  saveState('shping-list',null)
+  saveState('KJc425-bG',null)
+  saveState('L0I3t-30p',null)
 
 }
   }

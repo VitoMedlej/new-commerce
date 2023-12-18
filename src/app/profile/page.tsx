@@ -12,24 +12,24 @@ const Index = () => {
 
     const router= useRouter()
     const fetchUserAndList = async () => {
-            const user = localStorage.getItem('24j1i2cj4io-dadxzazd213')
+            const user = localStorage.getItem('IONn41-rKV2Vda')
             if (user) {
                    let parsedUser = JSON.parse(user)
                    if (!parsedUser) {return}
                    setLocalUser(parsedUser)
             }
-            const existingWishlist = loadState('rFSA4fsaj214-dXDSkf21') || [];
+            const existingWishlist = loadState('PPfl42LV-7mTQz') || [];
             setWishlistItems(existingWishlist);
         }
     const logout = () => {
-        localStorage.removeItem('24j1i2cj4io-dadxzazd213')
-        localStorage.removeItem('5if16wt1')
+        localStorage.removeItem('IONn41-rKV2Vda')
+        localStorage.removeItem('fI52mv026')
         setLocalUser(null)
 
     }
     const handleRemoveFromWishlist = (_id : string) => {
         const updatedWishlist = wishlistItems.filter((item:any) => item?._id !== _id);
-        saveState('rFSA4fsaj214-dXDSkf21', updatedWishlist);
+        saveState('PPfl42LV-7mTQz', updatedWishlist);
         setWishlistItems(updatedWishlist);
     };
     useEffect(()=>{

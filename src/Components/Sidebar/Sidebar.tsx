@@ -22,7 +22,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
   const [localUser,setLocalUser] = useState<{name?:string,email?:string} | null>(null)
 
   const fetchUserAndList = async () => {
-    const user = localStorage.getItem('24j1i2cj4io-dadxzazd213')
+    const user = localStorage.getItem('IONn41-rKV2Vda')
     if (user) {
            let parsedUser = JSON.parse(user)
            if (!parsedUser) {return}

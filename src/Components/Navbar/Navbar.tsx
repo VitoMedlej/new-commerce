@@ -43,7 +43,7 @@ export default function Navbar() {
     // const localCart = [1]
     useEffect(() => {
         const cart : any = []
-        // const cart = loadState('shping-list') || []
+        // const cart = loadState('L0I3t-30p') || []
         if (cart) {
 
             setLocalCart(cart)

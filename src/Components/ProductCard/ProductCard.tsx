@@ -119,8 +119,8 @@ title: string,
                         display: inStock !== false ? 'flex':'none',
 
                         my: .5,
-                    color:'green',
-                    fontWeight: '400',
+                    // color:'green',
+                    fontWeight: '300',
                     fontSize: {xs:'1.01em',sm:'1.16em'}
                 }}>
                     <del>
@@ -150,14 +150,14 @@ title: string,
 
           {inStock !== false ?      <Box className="flex">
 
-          {!whishedItem &&      <Btn
+          {!whishedItem &&      <Btn v2
             className='cursor gap1'
                 
                      onClick={()=>addToCart(1,_id,{title,category,img:images[0],_id,price: Number(newPrice) ?Number(newPrice) : price},true)}
                     
                     sx={{
                         color:'white',
-                        width:'70%',
+                        width:'99%',
                    
                     borderRadius:0,
                   
@@ -167,13 +167,13 @@ title: string,
                 </Btn>}
 
            
-                <WishlistButton onRemove={onRemove} productId={_id} product={{ title,
+                {/* <WishlistButton onRemove={onRemove} productId={_id} product={{ title,
     price,
     images,
     category,
     _id,
     width,
-    height}}/>
+    height}}/> */}
                 </Box>
                 :
 

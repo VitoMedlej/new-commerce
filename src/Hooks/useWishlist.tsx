@@ -16,7 +16,7 @@ const useCart = () => {
     }, open = true) => {
 
 
-        const existingWishlist = loadState('rFSA4fsaj214-dXDSkf21') || [];
+        const existingWishlist = loadState('PPfl42LV-7mTQz') || [];
 
         const productIndex = existingWishlist.findIndex((item:any) => item._id === _id);
     
@@ -36,10 +36,10 @@ const useCart = () => {
             statusText = 'Added to Wishlist';
         }
     
-        saveState('rFSA4fsaj214-dXDSkf21', existingWishlist);
+        saveState('PPfl42LV-7mTQz', existingWishlist);
     
         // setChipStatus({severity: 'success', open: true, text: statusText});
-        // pushState('rFSA4fsaj214-dXDSkf21', {
+        // pushState('PPfl42LV-7mTQz', {
         //     img: product.img,
         //     category: product
         //         ?.category || 'Collection',
