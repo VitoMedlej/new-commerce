@@ -64,6 +64,7 @@ const Preloader3 = ({res}:{res:any}) => {
             },
             mt:2,
             mb:2,
+            pt:2,
             height: '100%'
         }}>
             <Swiper
