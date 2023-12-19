@@ -62,7 +62,7 @@ const Preloader3 = ({res}:{res:any}) => {
             display: {
                 xs: 'flex'
             },
-            // mt:18,
+            mt:2,
             mb:2,
             height: '100%'
         }}>

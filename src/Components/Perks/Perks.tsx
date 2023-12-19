@@ -24,12 +24,11 @@ const Perks = () => {
 
     ]
   return (
-    <Box className='w100' sx={{px:1,py:8}}>
+    <Box className='w100' sx={{px:1,my:2,py:8}}>
         <Box>
         <Typography
                 className='sectionTitle  box'
                 sx={{
-                  pt:'.5em',
                   mx:1,
                   width:'100%',
                   display:{xs:'flex',sm:'flex'},
