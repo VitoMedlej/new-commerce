@@ -35,7 +35,7 @@ export default function RootLayout({children} : {
                     <Sidebar cates={undefined}/>
                     <QuickCart/>
                     <ScrollToTop/>
-                    <Popup/>
+                    {/* <Popup/> */}
                     <main style={{marginTop:6}}>
 
                      {children}

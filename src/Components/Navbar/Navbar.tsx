@@ -101,7 +101,7 @@ export default function Navbar() {
     mx: {
         sm: '1em'
     },
-    width:{xs:'90px',sm: '110px'}
+    width:{xs:'100px',sm: '110px',md:'120px'}
 }}>
     <img
         className='img'
@@ -233,7 +233,7 @@ mobile
                         </IconButton>
 
                         <IconButton
-                        onClick={() => router.push('/collection/products')}
+                        onClick={() => setCartOpen(true)}
                             sx={{
                             color: 'black'
                         }}>

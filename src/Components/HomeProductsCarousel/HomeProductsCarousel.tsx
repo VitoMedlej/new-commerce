@@ -27,7 +27,7 @@ const ProductCollection = ({sx,delay,Collectiontitle,data,setQuickView} : {
             my: '3em',
             ...sx,
         }}>
-            <Box className="flex justify-between space-between w100">
+            <Box  className="flex justify-between space-between w100">
 
             <Typography
                 className='sectionTitle   box'
