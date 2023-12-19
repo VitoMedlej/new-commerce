@@ -212,9 +212,11 @@ onClick={()=>router.push(`${'cricut machines'.replace(/ /g, '-').toLocaleLowerCa
         
 
         
-        <Box>
+        <Box sx={{my:8}}>
           <img src="https://ucarecdn.com/e9c63dfe-42b7-4048-a536-15dbde376c43/ad.JPG" alt="" className="img" />
         </Box>
+        <HomeProductsCarousel Collectiontitle={"Shop Our Latest Products"} delay={3000} data={data?.featuredProducts}/>
+
         <Perks/>
 
     </Container>

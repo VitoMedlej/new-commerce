@@ -25,7 +25,7 @@ const SMicons = ({sx,color}:{color?:string,sx?:any}) => {
     {sm.map((item)=>{
       return <a key={item.href} className='center flex auto rounded smIcon pointer align-center gap white' href={`${item.href}`} target='_blank' rel={'noneferrer'}>
 
-            <item.Icon color={color || 'white'} size='2em'/>
+      <img src={`${item?.Icon}`} alt="" className="img" />
          </a>
     })}
     </Box>

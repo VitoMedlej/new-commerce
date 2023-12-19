@@ -13,14 +13,28 @@ const Preloader3 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState(
         [
-          {
-            img: "https://www.footlocker.ph/media/weltpixel/owlcarouselslider/images/i/m/img_2458_1.jpg",
+        //   {
+        //     img: "https://www.footlocker.ph/media/weltpixel/owlcarouselslider/images/i/m/img_2458_1.jpg",
+        //     text: ""
+        // },
+        {
+            img: "https://ad.kapoorwatch.com/content/images/banners/RolexDesk1920x6553.webp",
             text: ""
         },
         {
-            img: "https://www.footlocker.ph/media/weltpixel/owlcarouselslider/images/i/m/img_2458_1.jpg",
+            img: "https://ad.kapoorwatch.com/content/images/banners/DecTudorDesk1920x655.webp",
             text: ""
         },
+
+        
+        // {
+        //     img: "https://ucarecdn.com/e9c63dfe-42b7-4048-a536-15dbde376c43/ad.JPG",
+        //     text: ""
+        // },
+        {
+            img: `https://ad.kapoorwatch.com/content/images/banners/BvlgariDesk1920x655.webp`,
+            text:''
+        }
         // {
         //     img: "https://scontent.fbey24-1.fna.fbcdn.net/v/t31.18172-8/17814600_1847111438874077_155868236703513607_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=2be8e3&_nc_ohc=4WtIz6t_OncAX9y0Yvb&_nc_ht=scontent.fbey24-1.fna&oh=00_AfCadQOksvI3kB1MflMPObgJcf-rAwATFe_NPa4_ludDoA&oe=65A7F8C2",
         //     text: ""
@@ -42,13 +56,13 @@ const Preloader3 = ({res}:{res:any}) => {
             // width: {xs:'98%',md:'74%',lg:'80%'},
             width:'100%',
             // maxWidth: 'lg',
-            maxHeight:'450px',
+            minHeight:'350px',
             maxWidth:'lg',
             margin: '0 auto',
             display: {
                 xs: 'flex'
             },
-            mt:20,
+            mt:18,
             mb:2,
             height: '100%'
         }}>

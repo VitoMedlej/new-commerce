@@ -8,8 +8,8 @@ import SMicons from '../SMicons/SMicons';
 
 
 const Footer = () => (
-  <footer className="site-footer " style={{color:'black',background:'white'}}>
-    <div className="container " style={{color:'black',background:'white'}}>
+  <footer className="site-footer " style={{color:'white',background:'#2a3442'}}>
+    <div className="container " style={{color:'white',background:'#2a3442'}}>
       <div className="site-footer__top ">
         <div className="site-footer__description">
           <div className='logos cursor'>
@@ -48,7 +48,7 @@ const Footer = () => (
             <li><Link href="/about">About Us</Link></li>
           </ul>
      
-          <ul  className='ul-white' style={{color:'black'}}>
+          <ul  className='ul-white' style={{color:'white'}}>
             <li className='link-title'>Contact</li>
             <li><Link href="mailto:sales@phoenixBlaze-lb.com">sales@phoenixBlaze-lb.com</Link></li>
             
@@ -69,7 +69,7 @@ const Footer = () => (
                         <img src="https://whish.money/app/logos/whish_v2.png" alt="Whish Money Payment method logo" className="img contain" />
                         </Box>
                         <Box sx={{width:'80px'}}>
-                        <img src="https://th.bing.com/th/id/R.ece974086208cee8d37d21123f562abe?rik=4IJtiW%2b9iesE9w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-IaVdwhUI7ZU%2fUBerQ27aeLI%2fAAAAAAAAAEo%2f0hnhKNuuna4%2fs1600%2fOMT-BLACK-LOGO.jpg&ehk=PssKqWqp%2bXRrShOU%2bTU%2bxGsH89Y%2fTze%2bIql7rR3SBf4%3d&risl=&pid=ImgRaw&r=0" alt="Whish Money Payment method logo" className="img contain" />
+                        <img src="https://th.bing.com/th/id/R.ece974086208cee8d37d21123f562abe?rik=4IJtiW%2b9iesE9w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-IaVdwhUI7ZU%2fUBerQ27aeLI%2fAAAAAAAAAEo%2f0hnhKNuuna4%2fs1600%2fOMT-white-LOGO.jpg&ehk=PssKqWqp%2bXRrShOU%2bTU%2bxGsH89Y%2fTze%2bIql7rR3SBf4%3d&risl=&pid=ImgRaw&r=0" alt="Whish Money Payment method logo" className="img contain" />
                         </Box>
                         <Box sx={{width:'80px',ml:2}}>
 
@@ -80,14 +80,17 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="site-footer__bottom " style={{color:'black',borderTop:"1px solid #0000001f"}}>
-      <div className="container " style={{color:'black'}}>
+    <div className="site-footer__bottom " style={{background:'#1b2129',color:'white',borderTop:"1px solid #0000001f"}}>
+      <div className="container flex center" style={{color:'white',background:'#1b2129',}}>
         <p>Website Developed By{' '}
-          <a style={{ color: 'black' }} href={`${'https://www.onbeirut.com'}`}>OnBeirut Agency </a></p>
+          <a style={{ color: 'white' }} href={`${'https://www.onbeirut.com'}`}>OnBeirut Agency </a></p>
         <p>
+          
         {' | '} 
+
         ©phoenixBlaze-lb
         </p>
+    
       </div>
     </div>
   </footer>

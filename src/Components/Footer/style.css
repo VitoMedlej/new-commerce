@@ -27,17 +27,17 @@ footer .site-footer__links ul li {
   padding: 0.14em 0;
 }
 footer .site-footer__links ul li a {
-  color: rgba(38, 38, 38, 0.8156862745);
+  color: rgba(255, 255, 255, 0.8156862745);
   text-decoration: none !important;
 }
 footer .site-footer__links ul .link-title {
   font-weight: 300;
   padding: 0 0 0.65em 0;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 600 !important;
 }
 footer .footer-p {
-  color: rgba(46, 46, 46, 0.635);
+  color: rgb(255, 255, 255);
 }
 footer .site-footer__bottom div p {
   align-items: center;
@@ -152,12 +152,12 @@ button[disabled] {
      object-fit: contain;
   width: 45px;
   height: 35px;
-  fill: #000;
+  fill: #ffffff;
   margin-right: 15px;
 }
 .site-footer .site-footer__description h6 {
   display: flex;
-  color: #000;
+  color: #ffffff;
   font-weight: 300;
   align-items: center;
   margin-bottom: 33px;
@@ -208,7 +208,7 @@ button[disabled] {
 }
 .site-footer .site-footer__links ul li {
   font-size: 14px;
-  color: #000;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 @media (min-width: 767px) {
