@@ -18,13 +18,13 @@ const Footer = () => (
               {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='/icon.png' alt="phoenix-blaze Logo" />
+            <img className='img ' src='https://ucarecdn.com/92560bb1-4dac-49ac-8571-f69c27574e0b/phoenixblaze.PNG' alt="phoenix-blaze Logo" />
             </Link>
           </div>
           <Typography component='h1' sx={{ fontSize: '.9em',color:"2b2b2b" }}  className='footer-p '>
-          Welcome to phoenix-blaze, where creativity becomes reality. Located in Lebanon, we offer a wide selection of arts and crafts supplies, including Cricut products, to help you unleash your creativity. Whether you’re a professional artist or just starting out, we have everything you need to bring your ideas to life. Shop now and discover the endless possibilities of crafting.
+          Phoenix Blaze is your one-stop destination for trendy and affordable fashion accessories in Lebanon. Whether you are looking for a statement piece to complete your outfit, or a gift for someone special, we have something for everyone. Browse our collection of earrings, necklaces, bracelets, rings, scarves, bags, and more. You will find a variety of styles, colors, and materials to suit your taste and budget
           </Typography>
-          <SMicons/>
+          {/* <SMicons/> */}
 
           {/* <ul className="site-footer__social-networks">
           <li><a href="https://www.facebook.com/profile.php?id=100063581229923" rel="noreferrer" target='_blank'><i className="icon-facebook"></i></a></li>

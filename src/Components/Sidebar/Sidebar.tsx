@@ -22,7 +22,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
   const [localUser,setLocalUser] = useState<{name?:string,email?:string} | null>(null)
 
   const fetchUserAndList = async () => {
-    const user = localStorage.getItem('IONn41-rKV2Vda')
+    const user = localStorage.getItem('24j1i2cj4io-dadxzazd213')
     if (user) {
            let parsedUser = JSON.parse(user)
            if (!parsedUser) {return}
@@ -77,13 +77,13 @@ useEffect(()=>{
                                 </Box>
       <List>
       <ListItem
-          sx={{fontWeight:600}}
+          sx={{fontWeight:400}}
 
           onClick={()=>{router.push(`/collection/products`); toggleDrawer(false)}}
            disablePadding>
             <ListItemButton>
             
-                  <Typography sx={{fontWeight:600}}>
+                  <Typography sx={{fontWeight:400}}>
               All Products
             </Typography>
             </ListItemButton>
@@ -92,15 +92,15 @@ useEffect(()=>{
           </ListItem>
 
 
-                  {/* <Accordion sx={{border:'none',boxShadow:'none',}}>
+                  <Accordion sx={{border:'none',boxShadow:'none',}}>
             
                   <AccordionSummary
           expandIcon={<AiOutlineArrowUp />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-       <Typography sx={{fontWeight:600}}>
-             Materials
+       <Typography sx={{fontWeight:400}}>
+       women
             </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -113,26 +113,23 @@ useEffect(()=>{
 
 onClick={()=>
 {setOpen(false);
-router.push(`/materials/products`)}}
+router.push(`/women/products`)}}
 
 >
 
 
-<ListItemButton >
+{/* <ListItemButton >
             <Typography sx={{fontWeight:300}}>
-        -All Materials
+        -View All
       </Typography>
-      </ListItemButton>
+      </ListItemButton> */}
 </ListItem>
 
-{[`Adhesive Vinyls`,
-`Heat Transfer Vinyls`,
-`Papers and Cards`,
-`Other Materials`].map(i=>{   return  <ListItem sx={{padding:0,width:'100%'}}
+{['Dresses', 'Skirts'].map(i=>{   return  <ListItem sx={{padding:0,width:'100%'}}
 
   onClick={()=>
     {setOpen(false);
-    router.push(`/materials/products?type=${encodeURIComponent(i).toLocaleLowerCase()}`)}}
+    router.push(`/organic herbs/products?type=${encodeURIComponent(i).toLocaleLowerCase()}`)}}
 
 key={i}>
 
@@ -149,19 +146,19 @@ key={i}>
 
 
         </AccordionDetails>
-      </Accordion> */}
+      </Accordion>
 
 
 
-      {/* <Accordion sx={{border:'none',boxShadow:'none',}}>
+      <Accordion sx={{border:'none',boxShadow:'none',}}>
             
             <AccordionSummary
     expandIcon={<AiOutlineArrowUp />}
     aria-controls="panel1a-content"
     id="panel1a-header"
   >
- <Typography sx={{fontWeight:600}}>
- Tools and Accessories
+ <Typography sx={{fontWeight:400}}>
+ Men
       </Typography>
   </AccordionSummary>
   <AccordionDetails>
@@ -175,25 +172,23 @@ key={i}>
 
 onClick={()=>
 {setOpen(false);
-router.push(`/tools-and-accessories/products`)}}
+router.push(`/Men/products`)}}
 
 >
 
 
-<ListItemButton >
+{/* <ListItemButton >
             <Typography sx={{fontWeight:300}}>
-        -All Tools
+        -View All
       </Typography>
-      </ListItemButton>
+      </ListItemButton> */}
 </ListItem>
 {[
-  `Crafting Tools`,
-`Machine Blades`,
-`Cutting mats`].map(i=>{   return  <ListItem sx={{padding:0,width:'100%'}}
+'Shirts', 'Pants'].map(i=>{   return  <ListItem sx={{padding:0,width:'100%'}}
 
 onClick={()=>
 {setOpen(false);
-router.push(`/tools-and-accessories/products?type=${encodeURIComponent(i).toLocaleLowerCase()}`)}}
+router.push(`/natural supplements/products?type=${encodeURIComponent(i).toLocaleLowerCase()}`)}}
 
 key={i}>
 
@@ -210,20 +205,19 @@ key={i}>
 
 
   </AccordionDetails>
-</Accordion> */}
+</Accordion>
 
 
-
-
-{/* <Accordion sx={{border:'none',boxShadow:'none',}}>
+   
+<Accordion sx={{border:'none',boxShadow:'none',}}>
             
             <AccordionSummary
     expandIcon={<AiOutlineArrowUp />}
     aria-controls="panel1a-content"
     id="panel1a-header"
   >
- <Typography sx={{fontWeight:600}}>
- Art supplies
+ <Typography sx={{fontWeight:400}}>
+ New Arrivals
       </Typography>
   </AccordionSummary>
   <AccordionDetails>
@@ -236,25 +230,23 @@ key={i}>
 
 onClick={()=>
 {setOpen(false);
-router.push(`/art-supplies/products`)}}
+router.push(`/New Arrivals/products`)}}
 
 >
 
 
-<ListItemButton >
+{/* <ListItemButton >
             <Typography sx={{fontWeight:300}}>
-        -All Supplies
+        -View All
       </Typography>
-      </ListItemButton>
+      </ListItemButton> */}
 </ListItem>
 
-{[`Paints`,
-`Pen & Markers`,
-`Other Art Supplies`].map(i=>{   return  <ListItem sx={{padding:0,width:'100%'}}
+{[`All Items`].map(i=>{   return  <ListItem sx={{padding:0,width:'100%'}}
 
 onClick={()=>
 {setOpen(false);
-router.push(`/art-supplies/products?type=${encodeURIComponent(i).toLocaleLowerCase()}`)}}
+router.push(`/mushrooms/products?type=${encodeURIComponent(i).toLocaleLowerCase()}`)}}
 
 key={i}>
 
@@ -271,42 +263,11 @@ key={i}>
 
 
   </AccordionDetails>
-</Accordion> */}
-       {[
-//     'New Arrivals',
-//     `Hot offers`,
-// `Cricut machines`, 
-// `Heat presses`,
-
-// `Printers`,
-// `Customizable Blanks`,
-
-'New Arrivals',
-'Men',
-'Women',
-'Children'
-
-].map((text, index) => {
-          if (!text) return;
-          return <ListItem
-        
-          onClick={()=>{setOpen(false);
-            router.push(`/${encodeURIComponent(`${text}`).toLocaleLowerCase()}/products`)}}
-          key={text} disablePadding>
-            <ListItemButton>
-              {/* <ListItemIcon>
-                {index % 2 === 0 ? <IoShirtOutline /> : <IoShirtSharp />}
-              </ListItemIcon> */}
-            <Typography sx={{fontWeight:600}}>
-              {text}
-            </Typography>
-            </ListItemButton>
-          </ListItem>
-        })
-        
-        }
+</Accordion>
+    
       </List>
- 
+    
+    
       <Divider />
       
     </Box>

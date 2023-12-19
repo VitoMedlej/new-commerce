@@ -9,12 +9,12 @@ import ContextWrapper from '@/context/Contexts'
 import Popup from '@/Components/Popup/Popup'
 
 export const metadata = {
-    title: 'phoenix-blaze | Arts & Crafts Supplies, Cricut Products',
-    description: `Shop at phoenix-blaze, where creativity becomes reality. Find all your arts and
-     crafts supplies, including best Cricut products in Lebanon`,
+    title: 'Phoenix Blaze - Online Shop for Fashion Accessories in Lebanon',
+    description: `Phoenix Blaze is your one-stop destination for trendy and affordable fashion accessories in Lebanon. Shop online for earrings, necklaces, bracelets, rings, scarves, bags, and more.`,
     icons: {
         icon: `https://ucarecdn.com/92560bb1-4dac-49ac-8571-f69c27574e0b/phoenixblaze.PNG`
-    }
+    },
+    keywords: "fashion accessories, online shopping, lebanon, jewelry, scarves, bags"
 }
 
 export default function RootLayout({children} : {

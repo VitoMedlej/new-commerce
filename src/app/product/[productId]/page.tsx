@@ -8,23 +8,22 @@ import {  Box, CircularProgress, Divider, Grid, Typography } from '@mui/material
 import {BsWhatsapp} from 'react-icons/bs'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import BreadCrumb from '@/Components/BreadCrumb/BreadCrumb'
-import  Head from 'next/head'
 import useCart from '@/Hooks/useCart'
 import { useEffect, useState } from 'react'
 import { IProduct } from '@/Types/Types'
 import { useParams } from 'next/navigation'
 import { server } from '@/Utils/Server'
 import { QuantityPicker } from '@/Components/Shared/QuantityPicker/QuantityPicker'
+import ProductReview from '@/Components/ProductReview/ProductReview'
+import ColorSelector from '@/Components/ColorSelector/ColorSelector'
 
 const Index = () => {
     const {productId} = useParams()
     const {incrementQty} = useCart()
- 
+    // const router = useRouter()
     const {addToCart}= useCart()
     const [loading,setLoading] = useState(false)
-    const [selectedQuantity,setSelectedQuantity] = useState(1)
     const [selectedColor,setSelectedColor] = useState('')
-    console.log('selectedColor: ', selectedColor);
     const [data,setData] = useState<{
       product: IProduct | any ;
       moreProducts: IProduct[] | never[];
@@ -33,7 +32,9 @@ const Index = () => {
       product : null,
       moreProducts : []
     })
-    
+    const [selectedQuantity,setSelectedQuantity] = useState(1)
+  
+
     
        const InitialFetch = async () => {
         try {
@@ -42,7 +43,7 @@ const Index = () => {
           const res = await req.json()
         
           if (res?.success && res?.product) {
-          setData({product:res?.product,moreProducts : res?.moreProducts})
+            setData({product:res?.product,moreProducts : res?.moreProducts})
           setLoading(false)
 
           }
@@ -58,29 +59,42 @@ const Index = () => {
         }
       }
       useEffect(() => {
-        
+        setLoading(true)
         InitialFetch()
         
         return  ()=> setLoading(false)
 
       }, [])
 
+      const [swiper, setSwiper] = useState<any>(null);
+
+      const goToSlide  = (index: number) => {
+        if (swiper) {
+          swiper?.slideTo(index);
+        }
+      };
+      
   return (
      
     
-      <Box sx={{mt:15}}>
+      <Box sx={{mt:2}}>
  
       <BreadCrumb  />
-{!loading && data?.product !== undefined && data?.product?.title ?  <Grid sx={{maxWidth:'lg',mx:1,pt:{sm:15,md:15,lg:9}}} className='auto' container>
-       <Grid  item xs={12}  md={7} >
-         <ProductImageCarousel images={data?.product?.images}/>
-   
+{!loading && data?.product !== undefined && data?.product?.title ? <Grid sx={{maxWidth:'lg',mx:1,pt:{sm:2,md:2,lg:2}}} className='auto' container>
+       <Grid  item xs={12}  md={6} >
+         <ProductImageCarousel  images={data?.product?.images}/>
+        <Box className="flex wrap justify-between between space-around" sx={{mt:1}}>
+
+         
+        
+                </Box>
        </Grid>
        <Grid sx={{
-        border:'1px solid #00000029',
+        ml:{xs:0,sm:2},
+        // border:'1px solid #00000029',
         px:{xs:1,sm:1.5}}} item xs={12}  md={5}>
-         <Box sx={{pt:{xs:3,sm:0}}}>
-             <Typography component={'h1'} sx={{fontWeight:400,pt:1,fontSize:{xs:'2em',sm:'2.25sem'}}}>
+         <Box sx={{px:{xs:0,sm:0},pt:{xs:3,sm:0}}}>
+             <Typography component={'h1'} sx={{fontWeight:400,pt:1,fontSize:{xs:'1.2em',sm:'1.55sem'}}}>
               {data?.product?.title || 'Loading Product Details'}
              </Typography>
              <Typography className='gray' component={'h4'} sx={{fontWeight:400}}>
@@ -90,48 +104,75 @@ const Index = () => {
                In Stock
              </Typography> */}
             
-   {data?.product?.inStock !== false &&          <Typography 
-                 component={'h1'} sx={{my:.25,fontWeight:500,color:'green',fontSize:{xs:'1em',sm:'1.25sem'}}}>
-                 ${data?.product?.newPrice ? data?.product?.newPrice  : data?.product?.price || 0}
+             <Typography 
+                 component={'h1'} sx={{my:.25,fontWeight:500,color:'green',fontSize:{xs:'1em',sm:'1.45sem'}}}>
+                 ${
+                 data?.product?.price
+                 }
+
              </Typography>
-             
-            }
          </Box>
    
       
          
-         {data?.product?.inStock !== false ?     <Box className='flex wrap ' sx={{my:2,position:'relative'}}>
-              <Box sx={{width:'100%'}}>
+             <Box className='flex wrap ' sx={{my:2,justifyContent:'flex-start',position:'relative'}}>
+              <Box>
 
              <QuantityPicker 
-                    onChange={(e:number)=>{setSelectedQuantity(e)}}
+                    onChange={(e:number)=>{incrementQty(data?.product?._id,e)}}
                     
-                    min={1} max={10} value={selectedQuantity}/>
+                    min={1} max={10} value={data?.product?.qty > 10 ? 10 : data?.product?.qty || 1}/>
               </Box>
 
-       <Btn 
-                     onClick={()=>addToCart(selectedQuantity,`${data?.product?._id}`,{title : data.product.title ,category: data.product.category,img:data.product.images[0], _id : data.product._id,price:data.product.newPrice ? data.product.newPrice: data.product.price, selectedColor},true,true)}
+             <Btn 
+                      onClick={()=>addToCart(selectedQuantity,`${data?.product?._id}`,{title : data.product.title ,category: data.product.category,img:data.product.images[0], _id : data.product._id,price:data.product.newPrice ? data.product.newPrice: data.product.price, selectedColor},true,true)}
              
               sx={{gap:.5,
-                borderRadius:0,
-             width:{xs:'100%',sm:'49%' }}}>
-                 Add To Cart
-                 <AiOutlineShoppingCart  fontSize={'medium'}/>
+                borderRadius:'200px',
+              color:'white',
+                fontSize:{xs:'.7em',sm:'.9em'},
+                // background : data?.product?.colors[0] ? `${data?.product?.colors[0]}` : 'black', 
+                // borderColor : data?.product?.colors[0] ? `${data?.product?.colors[0]}` : 'black', 
+             width:{xs:'49%',sm:'49%'}}}>
+                 Add To Bag
              </Btn>
-             <Btn   sx={{border:'none',background:'transparent', color:'green',gap:.5,mt:.5,":hover":{color:'black'},width:{xs:'100%',sm:'49%'}}}>
+             {/* <Btn   sx={{background:'transparent',  
+                fontSize:{xs:'.7em',sm:'.9em'},
+             
+             borderRadius:'200px',border:'1px solid green',color:'green',gap:.5,mt:.5,":hover":{color:'black'},width:{xs:'49%',sm:'49%'}}}>
                  WhatsApp 
-                 <BsWhatsapp fontSize={'medium'}/>
-             </Btn>
+             </Btn> */}
              </Box>
-            :
-            <Typography component={'h1'} sx={{color:'red',fontWeight:500,pt:1,fontSize:{xs:'1.5em',sm:'2.25sem'}}}>
-            Out of Stock
-           </Typography> 
-            }
          <Divider></Divider>
 
          <Box sx={{pt:4}}>
-         { data?.product?.size && <Box >
+        
+
+         {/* { data?.product?.colors && data?.product?.colors?.length > 0 && <Box className='flex' sx={{py:2}}>
+                 <Typography >
+                 <strong>Colors:</strong>{' '}
+                 </Typography>
+             <Box  className='flex wrap row' sx={{gap:'.1em'}}>
+                 {
+                 
+                 data?.product?.colors.map((color:string)=>{
+                  return <Box className='cursor' key={color}
+                  onClick={()=>setSelectedColor(color)}
+                  sx={{mx:1,width:'25px',height:'25px',borderRadius:'50%',boxShadow:'1px 1px 3px gray',background:color,border:`2px solid ${color === selectedColor ? 'blue':'transparent'}`}}></Box>
+                 }) }
+             </Box>
+              
+          
+         </Box>} */}
+ <Typography sx={{fontWeight:400,py:.5}}>
+                 Color Options:
+             </Typography>
+             {
+              <ColorSelector options={data?.product?.colors}/>
+             }
+
+
+{ data?.product?.size && <Box sx={{mt:4}} >
              <Box >
                  <Typography >
                  <strong>Size:</strong>{' '}{data.product.size}
@@ -141,47 +182,29 @@ const Index = () => {
                 <ProductOptionSelect/>
              </Box> */}
          </Box>}
-
-         { data?.product?.colors && data?.product?.colors?.length > 0 && <Box className='flex' sx={{py:2}}>
-                 <Typography >
-                 <strong>Colors:</strong>{' '}
-                 </Typography>
-             <Box  className='flex wrap row' sx={{gap:'.1em'}}>
-                 {
-                 
-                data?.product?.colors.map((color : string)=>{
-                  
-                  return <Box className='cursor' key={color}
-                  onClick={()=>setSelectedColor(color)}
-                  sx={{mx:1,width:'25px',height:'25px',borderRadius:'50%',boxShadow:'1px 1px 3px gray',background:color,border:`2px solid ${color === selectedColor ? 'blue':'transparent'}`}}></Box>
-                 }) }
-             </Box>
-              
-             {/* <Box>
-                <ProductOptionSelect/>
-             </Box> */}
-         </Box>}
-
-             <Typography sx={{fontWeight:600,py:.25}}>
+             <Typography sx={{fontWeight:400,mt:1,pt:1.25}}>
                  Product Description:
              </Typography>
-             <Typography className='gray'>
+
+
+             <Typography className='gray pre wrapped'sx={{fontSize:'.85em',textWrap:'wrap'}}>
    {data?.product?.description}
              </Typography>
          </Box>
        </Grid>
-         {/* <ProductReview/>  */}
-       <HomeProductsCarousel Collectiontitle={"Shop More Products"} delay={3000} data={data?.moreProducts} />
-   </Grid> : <Box className='flex auto center align-center' sx={{py:15}}>
+       <Divider></Divider>
 
-     <CircularProgress />
-   </Box>
-     }
+         <ProductReview /> 
+       <HomeProductsCarousel Collectiontitle={"Shop More Products"} delay={3000} data={data?.moreProducts} />
+   </Grid> : <Box className='flex auto center align-center' sx={{py:5}}>
+
+<CircularProgress />
+</Box> }
    </Box>
     
   )
 }
-
+export const dynamic = 'force-dynamic'
 export default Index
 
 

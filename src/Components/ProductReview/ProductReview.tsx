@@ -30,7 +30,7 @@ const ProductReview = () => {
                         Product Review:
                     </Typography>
                     <Box>
-                   {false ?     <Typography className='gray' component={'p'}>
+                   {true ?     <Typography className='gray' component={'p'}>
                             No reviews yet
                         </Typography> :
 

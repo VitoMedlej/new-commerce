@@ -42,6 +42,7 @@ const ReviewForm = () => {
             }}>
 
                 <TextField
+                disabled
                     id="filled-multiline-flexible"
                     label="Your Name"
                     sx={{
@@ -49,6 +50,7 @@ const ReviewForm = () => {
                 }}
                     variant="outlined"/>
                 <TextField
+                disabled
                     sx={{
                     width: '49%'
                 }}
@@ -58,12 +60,14 @@ const ReviewForm = () => {
             </Box>
 
             <TextField
+            disabled
                 id="filled-multiline-flexible"
                 label="Your Review"
                 multiline
                 rows={4}
                 variant="outlined"/>
             <Btn
+            disabled
                 v2
                 sx={{
                 borderRadius: 1,
