@@ -18,6 +18,9 @@ const Preloader3 = ({res}:{res:any}) => {
         //     text: ""
         // },
         {
+            img:`https://espiaye.com/cdn/shop/files/5008D416-5C2A-4DCA-9D3D-32921667D772_aeff8867-7905-4d90-a1bc-6ce3a472022b.jpg?v=1691303531&width=750`
+        },
+        {
             img: "https://ad.kapoorwatch.com/content/images/banners/RolexDesk1920x6553.webp",
             text: ""
         },
@@ -57,14 +60,14 @@ const Preloader3 = ({res}:{res:any}) => {
             width:'100%',
             // maxWidth: 'lg',
             minHeight:'350px',
+            maxHeight:'650px',
             maxWidth:'lg',
             margin: '0 auto',
             display: {
                 xs: 'flex'
             },
-            mt:2,
-            mb:2,
             pt:2,
+            my:2,
             height: '100%'
         }}>
             <Swiper

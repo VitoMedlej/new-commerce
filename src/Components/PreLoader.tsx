@@ -217,8 +217,32 @@ onClick={()=>router.push(`${'cricut machines'.replace(/ /g, '-').toLocaleLowerCa
         </Box>
         <HomeProductsCarousel Collectiontitle={"Shop Our Latest Products"} delay={3000} data={data?.featuredProducts}/>
 
-        <Perks/>
+        {/* <Perks/> */}
 
+    </Container>
+    <Container sx={{py:{xs:12,sm:16},px:2}}>
+      <Box className='center text-center flex col'>
+        <Typography sx={{fontSize:'2em',pb:2,fontWeight:700}}>
+
+        VALUE YOU CAN TRUST BY PHOENIX BLAZE
+        </Typography>
+        <Typography sx={{maxWidth:'md'}} className='center auto text-center pre '>
+<strong>
+GUARANTEED FOR LIFE
+
+</strong>
+<br/>
+
+We offer a 30 day money back guarantee. Receive a full refund if you are not 100% in love with your purchase. 
+No cost to you, no questions asked
+
+- Lifetime warranty
+
+- Lost or stolen warranty
+
+- Free replacement parts for life
+        </Typography>
+      </Box>
     </Container>
         {/* <ContactSection/> */}
   </Box>

@@ -85,10 +85,10 @@ export default function TemporaryDrawer() {
                         : <Box className='auto center col flex items-center ' sx={{py:5}}>
 
                         <Box sx={{width:'60px'}}>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReJ1L9fmcCrMGqF0D0_kpEBDUzAr71C5Bw0fnXCzOvN_-rK5SOiLapcMwXo--Wd63pzw4&usqp=CAU" alt="Empty Cart Image" className="img" />
+                            <img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="Empty Cart Image" className="img" />
                         </Box>
                         <Typography sx={{fontSize:'.98em',width:'80%',py:1,textAlign:'center'}}> 
-                            No Products Have Been Added.
+                            YOUR CART IS EMPTY. 😶
                         </Typography>
                         </Box> 
                         }

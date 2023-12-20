@@ -8,8 +8,8 @@ import SMicons from '../SMicons/SMicons';
 
 
 const Footer = () => (
-  <footer className="site-footer " style={{color:'white',background:'#2a3442'}}>
-    <div className="container " style={{color:'white',background:'#2a3442'}}>
+  <footer className="site-footer " style={{color:'white',background:'#ffffff'}}>
+    <div className="container " style={{color:'white',background:'#ffffff'}}>
       <div className="site-footer__top ">
         <div className="site-footer__description">
           <div className='logos cursor'>

@@ -99,6 +99,7 @@ export default function Navbar() {
 <Box className='flex'
     sx={{
     mx: {
+        xs:'.25em',
         sm: '1em'
     },
     width:{xs:'100px',sm: '110px',md:'120px'}
