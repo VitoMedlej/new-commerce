@@ -17,9 +17,7 @@ const Preloader3 = ({res}:{res:any}) => {
         //     img: "https://www.footlocker.ph/media/weltpixel/owlcarouselslider/images/i/m/img_2458_1.jpg",
         //     text: ""
         // },
-        {
-            img:`https://espiaye.com/cdn/shop/files/5008D416-5C2A-4DCA-9D3D-32921667D772_aeff8867-7905-4d90-a1bc-6ce3a472022b.jpg?v=1691303531&width=750`
-        },
+        
         {
             img: "https://ad.kapoorwatch.com/content/images/banners/RolexDesk1920x6553.webp",
             text: ""
@@ -34,10 +32,7 @@ const Preloader3 = ({res}:{res:any}) => {
         //     img: "https://ucarecdn.com/e9c63dfe-42b7-4048-a536-15dbde376c43/ad.JPG",
         //     text: ""
         // },
-        {
-            img: `https://ad.kapoorwatch.com/content/images/banners/BvlgariDesk1920x655.webp`,
-            text:''
-        }
+      
         // {
         //     img: "https://scontent.fbey24-1.fna.fbcdn.net/v/t31.18172-8/17814600_1847111438874077_155868236703513607_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=2be8e3&_nc_ohc=4WtIz6t_OncAX9y0Yvb&_nc_ht=scontent.fbey24-1.fna&oh=00_AfCadQOksvI3kB1MflMPObgJcf-rAwATFe_NPa4_ludDoA&oe=65A7F8C2",
         //     text: ""
