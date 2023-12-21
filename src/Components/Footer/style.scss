@@ -26,7 +26,7 @@ footer {
           min-width: 170px;
           li {
               a {
-                  color :#ffffffd0;
+                  color :#181818d0;
                   text-decoration: none !important;
               }
               padding: .14em 0;
@@ -34,12 +34,12 @@ footer {
           .link-title {
               font-weight: 300;
               padding: 0 0 .65em 0;
-              color:rgb(255, 255, 255);font-weight: 600 !important;
+              color:rgb(0, 0, 0);font-weight: 600 !important;
           }
       }
   }
   .footer-p {
-      color:rgb(255, 255, 255);
+      color:rgb(27, 27, 27);
   }
   .site-footer__bottom {
       div {
@@ -189,12 +189,12 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
       object-fit: contain;
       width: 45px;
       height: 35px;
-      fill: #ffffff;
+      fill: #1f1f1f;
       margin-right: 15px;
     }
     h6 {
       display: flex;
-      color: #ffffff;
+      color: #282828;
       font-weight: 300;
       align-items: center;
       margin-bottom: 33px;
@@ -238,7 +238,7 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
       }
       li {
         font-size: 14px;
-        color: #ffffff;
+        color: #191919;
         margin-bottom: 12px;
         @include breakpoint(phone) {
           margin-bottom: 15px;
@@ -260,7 +260,7 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
   }
   .site-footer__bottom {
     padding: 10px 0;
-    border-top: 1px solid #EBEBEB;
+    border-top: 1px solid #929292;
     @include breakpoint(phone) {
       padding: 16px 0;
     }
