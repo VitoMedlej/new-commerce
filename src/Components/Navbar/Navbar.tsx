@@ -106,7 +106,7 @@ export default function Navbar() {
 }}>
     <img
         className='img'
-        src={`https://ucarecdn.com/92560bb1-4dac-49ac-8571-f69c27574e0b/phoenixblaze.PNG`}
+        src={`https://ucarecdn.com/2fa435d7-5541-4aed-ab4b-3f6316abcf3f/PHB.jpeg`}
         alt="truenatureblend logo"/>
 </Box>
 </Link>
