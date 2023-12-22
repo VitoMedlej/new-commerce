@@ -69,7 +69,7 @@ PreLoader = ({data,resImages}:any) => {
   // ]
   // const twinImages =resImages?.categoryImage && resImages?.categoryImage?.length > 1 ? resImages?.categoryImage  :  [{img:'https://ucarecdn.com/e79d337c-b709-4ea4-aec0-6f3403afff1e/WhatsAppImage20230824at191717.jpeg'},{img:'https://ucarecdn.com/3a54db45-c216-4076-996c-3ec4524be8f0/WhatsAppImage20230824at191727.jpeg'}]
   return (
-    <Box >
+    <Box sx={{mt:{xs:'4em',sm:'6em',md:'6.5em'}}}>
       <MainCarousel resImages={resImages}/>
 
     <Container disableGutters className='wrap auto flex' sx={{pt:0,px:{sm:1},maxWidth:'xl',display:'flex'}}>

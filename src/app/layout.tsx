@@ -36,7 +36,7 @@ export default function RootLayout({children} : {
                     <QuickCart/>
                     <ScrollToTop/>
                     {/* <Popup/> */}
-                    <main style={{marginTop:6}}>
+                    <main style={{}}>
 
                      {children}
                     </main>

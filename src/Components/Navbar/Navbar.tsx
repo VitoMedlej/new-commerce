@@ -60,7 +60,7 @@ export default function Navbar() {
         flexWrap: 'wrap',
                 width:'100%',
                 boxShadow:'none',
-        background:'white',
+        background:'black',
         border: 'none',
         px:0,
         flexGrow: 1
@@ -75,7 +75,7 @@ export default function Navbar() {
 
                 boxShadow:'none',
 
-                background:'white',
+                background:'black',
             // maxWidth: 'lg',
                 width:'100%',
             margin: '0 auto',
@@ -88,7 +88,7 @@ export default function Navbar() {
 
                 sx={{
                 
-                background:'white',
+                background:'black',
                     maxWidth:'xl',
                 px:'0 !important',
                 
@@ -102,6 +102,7 @@ export default function Navbar() {
         xs:'.25em',
         sm: '1em'
     },
+    height:'95px',
     width:{xs:'100px',sm: '110px',md:'120px'}
 }}>
     <img
@@ -138,21 +139,21 @@ export default function Navbar() {
                         <IconButton
                             onClick={() => setOpenModal(!openModal)}
                             sx={{
-                            color: 'black'
+                            color: 'white'
                         }}>
 
-                                <CiSearch color='black'/>
+                                <CiSearch color='white'/>
                           
                         </IconButton>
                         <IconButton
                             onClick={() => router.push('/collection/products')}
                             sx={{
                                 margin : '8px',padding:0,
-                            color: 'black'
+                            color: 'white'
                         }}>
                             {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
 
-                                <CiShoppingCart color='black'/>
+                                <CiShoppingCart color='white'/>
                             {/* </Badge> */}
                             {/* <Typography>
                                 Cart
@@ -165,13 +166,13 @@ export default function Navbar() {
                             aria-label="menu"
                             sx={{
                             margin : '8px',padding:0,
-                            color: 'black',
+                            color: 'white',
                             // margin: '0.1em',
                             // display: {
                             //     md: 'none'
                             // }
                         }}>
-                            <IoIosMenu color='black'/>
+                            <IoIosMenu color='white'/>
                         </IconButton>
                    
    {/* <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} target='_blank' className='flex decor-none' rel='noopener'>
@@ -179,10 +180,10 @@ export default function Navbar() {
                         <IconButton
                             onClick={() => setCartOpen(!cartOpen)}
                             sx={{
-                            color: 'black'
+                            color: 'white'
                         }}>
                      
-                            <AiOutlinePhone color='black'/>
+                            <AiOutlinePhone color='white'/>
 
                         </IconButton>
     </a> */}
@@ -226,20 +227,20 @@ mobile
                         <IconButton
                             onClick={() => setOpenModal(!openModal)}
                             sx={{
-                            color: 'black'
+                            color: 'white'
                         }}>
 
-                                <CiSearch color='black'/>
+                                <CiSearch color='white'/>
                           
                         </IconButton>
 
                         <IconButton
                         onClick={() => setCartOpen(true)}
                             sx={{
-                            color: 'black'
+                            color: 'white'
                         }}>
                             {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
-                                <CiShoppingCart color='black'/>
+                                <CiShoppingCart color='white'/>
                             {/* </Badge> */}
                           
                             </IconButton>
@@ -252,11 +253,11 @@ mobile
                             edge="start"
                             aria-label="menu"
                             sx={{
-                            color: 'black',
+                            color: 'white',
                             // margin: '0.1em',
                          
                         }}>
-                            <IoIosMenu color='black'/>
+                            <IoIosMenu color='white'/>
                         </IconButton> */}
                     
                     </Box>
