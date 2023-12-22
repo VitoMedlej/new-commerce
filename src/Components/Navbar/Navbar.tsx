@@ -102,12 +102,12 @@ export default function Navbar() {
         xs:'.25em',
         sm: '1em'
     },
-    height:'95px',
-    width:{xs:'100px',sm: '110px',md:'120px'}
+    height:'100px',
+    width:{xs:'120px',sm: '120px',md:'120px'}
 }}>
     <img
-        className='img'
-        src={`https://ucarecdn.com/2fa435d7-5541-4aed-ab4b-3f6316abcf3f/PHB.jpeg`}
+        className='img contain'
+        src={`https://ucarecdn.com/5af1f507-5208-4bc4-9958-52312e822469/PHBCopy.jpeg`}
         alt="truenatureblend logo"/>
 </Box>
 </Link>
