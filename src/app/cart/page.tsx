@@ -23,6 +23,7 @@ const EmptyCartAlert = () => {
     return (
         <Box sx={{
             pb: 10,
+            mt:'4em',
             pt: 12
         }}>
             <Box
