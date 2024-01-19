@@ -77,7 +77,7 @@ const Index = () => {
   return (
      
     
-      <Box sx={{px:{xs:1,sm:0},mt:2}}>
+      <Box sx={{px:{xs:1,sm:0},mt:'8em'}}>
  
       <BreadCrumb  />
 {!loading && data?.product !== undefined && data?.product?.title ? <Grid sx={{maxWidth:'lg',mx:1,pt:{sm:2,md:2,lg:2}}} className='auto' container>
@@ -187,7 +187,7 @@ const Index = () => {
              </Typography>
 
 
-             <Typography className='gray pre wrapped'sx={{fontSize:'.85em',textWrap:'wrap'}}>
+             <Typography className='gray wrapped'sx={{whiteSpace:'pre-wrap',maxWidth:'100%',fontSize:'.85em',textWrap:'wrap'}}>
    {data?.product?.description}
              </Typography>
          </Box>
