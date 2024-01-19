@@ -23,7 +23,7 @@ const EmptyCartAlert = () => {
     return (
         <Box sx={{
             pb: 10,
-            pt: 2
+            pt: 12
         }}>
             <Box
                 className='flexed'
