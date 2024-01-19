@@ -10,7 +10,7 @@ const sm = [
         Icon:FaInstagram,
         href:'https://www.instagram.com/phoenix.blaze.lb/'
     },
-    {Icon:FaWhatsapp,href:'https://wa.me/+961123456'},
+    {Icon:FaWhatsapp,href:'https://wa.me/+96103039762'},
     {
       Icon :BsTiktok ,href: `tiktok.com/@phoenix-blazelb`,
     },
