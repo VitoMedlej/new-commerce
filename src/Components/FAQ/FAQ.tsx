@@ -46,7 +46,7 @@ const FAQs = [
     "A": "We do not sell wholesale. phoenix-blaze is a retailer and does not offer wholesale pricing. We do offer discounts on some bulk purchases. Contact Customer Support to see if this option is available for your particular purchase."
   },
   {
-    "Q": "11. Is CraftOnline a secure site?",
+    "Q": "11. Is Phoenix Blaze a secure site?",
     "A": "phoenix-blaze is very concerned about site security on the Internet today. That is why we have made sure that we have followed and surpassed all industry standards necessary for a secure site. These include encrypting all data that you give to us, processing your information in a safe and responsible manner, and not sharing any information that has been given to us by you, our customers.\n\nIn line with our strict security policy, we also offer a wide range of payment options, including Bank Transfer, Cheque, Money transfer through trusted channels, and even the option to 'Call us 'where you can finalize your order and call us with your way of payment.\n\nWe want you to feel confident when ordering from phoenix-blaze, and we are doing everything we can to continue to operate a secure site. If you have any other questions concerning site security, please feel free to email us at Customer Service."
   },
   {

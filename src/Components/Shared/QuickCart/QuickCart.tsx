@@ -103,7 +103,9 @@ export default function TemporaryDrawer() {
                         width:{xs:'100%',sm:'340px'},
                     }}>
                        <Btn 
-                       sx={{width:'100%',mx:1
+                       sx={{width:'100%',mx:1,
+                       background:'black',
+                       color:'#c1c1c1'
                     ,borderRadius:0,
                     }}
                        onClick={()=>{setCartOpen(false),router.push('/checkout')}}
@@ -114,10 +116,12 @@ export default function TemporaryDrawer() {
                          
                         sx={{
                             width:'100%',
-                            mx:1
-                    ,borderRadius:0,
+                            mx:1,
+                            color:'black',
+                    //    color:'#c1c1c1',
+                    borderRadius:0,
                             background:'transparent',my:1,
-                            ':hover':{background:'#1a4671',color:'white'}}}
+                            ':hover':{background:'#c1c1c1',color:'black'}}}
                         onClick={()=>{setCartOpen(false),router.push('/collection/products')}}
                          >
                         Continue Shopping

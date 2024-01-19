@@ -45,7 +45,7 @@ const Footer = () => (
             <li><Link href="/collection/products">All Products</Link></li> 
             <li><Link href="/cart">Cart</Link></li>
             <li><Link href="/info/terms-and-conditions">Terms and Conditions</Link></li>
-            <li><Link href="/about">About Us</Link></li>
+            {/* <li><Link href="/about-us">About Us</Link></li> */}
           </ul>
      
           <ul  className='ul-white' style={{color:'white'}}>
@@ -54,7 +54,7 @@ const Footer = () => (
             
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
 
-            <li><a href="https://www.instagram.com/phoenix-blaze.lb/?next=https%3A%2F%2Fwww.instagram.com%2Fticketshopcol%2Fp%2FBwKRsoxI8Tf%2F%3Fhl%3Dcs%26__coig_login%3D1" target="_blank" rel="noreferrer" >@phoenix-blaze</a></li>
+            <li><a href="https://www.instagram.com/phoenix.blaze.lb/" target="_blank" rel="noreferrer" >@phoenix-blaze</a></li>
             <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer" target='_blank' >Call Us</a></li>
             {/* <li><a href={`http://tiktok.com/@phoenix-blazelb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
           </ul>
@@ -80,8 +80,8 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="site-footer__bottom " style={{background:'#1b2129',color:'white',borderTop:"1px solid #0000001f"}}>
-      <div className="container flex center" style={{color:'white',background:'#1b2129',}}>
+    <div className="site-footer__bottom " style={{background:'black',color:'white',borderTop:"1px solid #0000001f"}}>
+      <div className="container flex center" style={{color:'white',background:'black',}}>
         <p>Website Developed By{' '}
           <a style={{ color: 'white' }} href={`${'https://www.onbeirut.com'}`}>OnBeirut Agency </a></p>
         <p>
