@@ -108,7 +108,7 @@ export default function Navbar() {
     <img
         className='img contain'
         src={`https://ucarecdn.com/5af1f507-5208-4bc4-9958-52312e822469/PHBCopy.jpeg`}
-        alt="truenatureblend logo"/>
+        alt="Phoenix Blaze logo"/>
 </Box>
 </Link>
                 <Box

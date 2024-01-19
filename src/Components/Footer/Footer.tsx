@@ -14,12 +14,20 @@ const Footer = () => (
         <div className="site-footer__description">
           <div className='logos cursor'>
 
-            <Link href="/">
-              {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
-              {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
-              {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='https://ucarecdn.com/2fa435d7-5541-4aed-ab4b-3f6316abcf3f/PHB.jpeg' alt="phoenix-blaze Logo" />
-            </Link>
+          <Box className='flex'
+    sx={{
+    mx: {
+        xs:'.25em',
+        sm: '1em'
+    },
+    height:'100px',
+    width:{xs:'120px',sm: '120px',md:'120px'}
+}}>
+    <img
+        className='img contain'
+        src={`https://ucarecdn.com/5af1f507-5208-4bc4-9958-52312e822469/PHBCopy.jpeg`}
+        alt="Phoenix Blaze logo"/>
+</Box>
           </div>
           <Typography component='h1' sx={{ fontSize: '.9em',color:"2b2b2b" }}  className='footer-p '>
           Phoenix Blaze is your one-stop destination for trendy and affordable fashion accessories in Lebanon. Whether you are looking for a statement piece to complete your outfit, or a gift for someone special, we have something for everyone. Browse our collection of earrings, necklaces, bracelets, rings, scarves, bags, and more. You will find a variety of styles, colors, and materials to suit your taste and budget
