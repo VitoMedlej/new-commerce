@@ -6,6 +6,19 @@ import { server } from "@/Utils/Server"
 // import { Box,  Container, Typography } from "@mui/material"
 // import { useEffect, useState } from "react"
 
+const fetchFn= async () => {
+try{
+    
+  const req = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-data`,{ next: { revalidate: 10 } })
+  // const req = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-data`,{ cache: 'no-store' ,next:{revalidate:0}})
+  let res = await req.json()
+  if (res) return res
+}
+catch(e){
+  console.log('e: ', e);
+
+}
+}
 export default async function Home() {
 //   const [data,setData] = useState< {
 //     products: IProduct[] | never[] ; 
@@ -39,9 +52,6 @@ export default async function Home() {
 //   }, [])
 try {
 
-      // const req = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-data`,{ next: { revalidate: 10 } })
-      const req = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-data`,{ cache: 'no-store' ,next:{revalidate:0}})
-      let res = await req.json()
       // console.log('res: ', res);
       // const reqImages = await fetch(`https://getpantry.cloud/apiv1/pantry/99610321-b6ca-48b7-a4e1-6103923a30da/basket/Images`,{cache:'no-store', next: { revalidate: 0 } })
 
@@ -51,12 +61,17 @@ try {
 
         let resImages = {
           MainCarousel: [
-              {
-                  img: "https://ad.kapoorwatch.com/content/images/banners/RolexDesk1920x6553.webp",
-                  text: ""
-              }
+            {
+              img: "https://ad.kapoorwatch.com/content/images/banners/RolexDesk1920x6553.webp",
+              text: ""
+          },
+          {
+              img: "https://ad.kapoorwatch.com/content/images/banners/DecTudorDesk1920x655.webp",
+              text: ""
+          },
           ]
       };
+      const res = await fetchFn()
       return (
         <PreLoader resImages={resImages || null} data={res?.data}/>
        )
