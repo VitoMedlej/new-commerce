@@ -9,7 +9,7 @@ import { server } from "@/Utils/Server"
 const fetchFn= async () => {
 try{
     
-  const req = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-data`,{ next: { revalidate: 10 } })
+  const req = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-data`,{ next: { revalidate: 0 } })
   // const req = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-data`,{ cache: 'no-store' ,next:{revalidate:0}})
   let res = await req.json()
   if (res) return res
