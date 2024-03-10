@@ -58,3 +58,6 @@ catch (error) {
 
 }
 }
+
+
+export const revalidate = 600 // revalidate at most every hour

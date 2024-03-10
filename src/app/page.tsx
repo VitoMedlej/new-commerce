@@ -9,7 +9,7 @@ import { server } from "@/Utils/Server"
 const fetchFn= async () => {
 try{
     
-  const req = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-data`,{ next: { revalidate: 0 } })
+  const req = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-data`)
   // const req = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-data`,{ cache: 'no-store' ,next:{revalidate:0}})
   let res = await req.json()
   if (res) return res
@@ -20,6 +20,9 @@ catch(e){
 }
 }
 export default async function Home() {
+// export default  function Home() {
+
+
 //   const [data,setData] = useState< {
 //     products: IProduct[] | never[] ; 
 //     featuredProducts:IProduct[] | never[];
@@ -50,7 +53,6 @@ export default async function Home() {
 //     InitialFetch()
 
 //   }, [])
-try {
 
       // console.log('res: ', res);
       // const reqImages = await fetch(`https://getpantry.cloud/apiv1/pantry/99610321-b6ca-48b7-a4e1-6103923a30da/basket/Images`,{cache:'no-store', next: { revalidate: 0 } })
@@ -75,15 +77,9 @@ try {
       return (
         <PreLoader resImages={resImages || null} data={res?.data}/>
        )
-}
-catch (e) {
-  console.log('e home: ', e);
-  return (
-    <PreLoader resImages={null} data={ null}/>
-   )
+ 
 
 }
     
 
 
-}
