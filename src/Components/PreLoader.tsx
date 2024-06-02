@@ -1,12 +1,12 @@
 "use client"
 import React from 'react'
 import { Box,  Container, Typography } from "@mui/material"
-import ContactSection from './ContactSection/ContactSection'
-import HomeProductCollection from './HomeProductCollection/HomeProductCollection'
+// import ContactSection from './ContactSection/ContactSection'
+// import HomeProductCollection from './HomeProductCollection/HomeProductCollection'
 import HomeProductsCarousel from './HomeProductsCarousel/HomeProductsCarousel'
 import MainCarousel from './MainCarousel/MainCarousel'
 import { useRouter } from 'next/navigation'
-import Perks from './Perks/Perks'
+// import Perks from './Perks/Perks'
 
 
 

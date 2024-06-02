@@ -16,7 +16,7 @@ try {
     const featuredProductsQuery = await ProductsCollection
         // .find({isFeatured: true})
         .find({})
-        .limit(20)
+        .limit(30)
     // const ProductsQuery = await ProductsCollection
     //     // .find({isFeatured: false})
     //     .find({})
@@ -59,5 +59,6 @@ catch (error) {
 }
 }
 
+export const dynamic = 'force-dynamic'
 
-export const revalidate = 600 // revalidate at most every hour
+// export const revalidate = 600 // revalidate at most every hour

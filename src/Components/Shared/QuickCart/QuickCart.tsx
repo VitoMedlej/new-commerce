@@ -88,7 +88,7 @@ export default function TemporaryDrawer() {
                             <img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="Empty Cart Image" className="img" />
                         </Box>
                         <Typography sx={{fontSize:'.98em',width:'80%',py:1,textAlign:'center'}}> 
-                            YOUR CART IS EMPTY. 😶
+                            YOUR CART IS EMPTY. 
                         </Typography>
                         </Box> 
                         }

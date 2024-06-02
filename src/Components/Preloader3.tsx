@@ -19,11 +19,11 @@ const Preloader3 = ({res}:{res:any}) => {
         // },
         
         {
-            img: "https://ad.kapoorwatch.com/content/images/banners/RolexDesk1920x6553.webp",
+            img: "https://ucarecdn.com/401b7064-5775-4200-91a3-59fd170294c5/RolexDesk1920x6553.webp",
             text: ""
         },
         {
-            img: "https://ad.kapoorwatch.com/content/images/banners/DecTudorDesk1920x655.webp",
+            img: "https://ucarecdn.com/57ed3c26-f5de-47c3-a5f3-fb052a7d48c3/DecTudorDesk1920x655.webp",
             text: ""
         },
 
