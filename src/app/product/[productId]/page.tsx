@@ -42,6 +42,7 @@ const Index = () => {
           const req = await fetch(`${server}/api/get-by-id?id=${productId}`,{ cache: 'no-store' })
           const res = await req.json()
         
+          console.log('res: ', res);
           if (res?.success && res?.product) {
             setData({product:res?.product,moreProducts : res?.moreProducts})
           setLoading(false)

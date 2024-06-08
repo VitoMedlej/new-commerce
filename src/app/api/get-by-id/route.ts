@@ -10,26 +10,30 @@ export async function GET(req : NextRequest, res : NextApiResponse) {
     let id=  searchParams.get('id') || null 
     if (!id) {
         return NextResponse.json({success: false});
-      
+        
     }
+    console.log('id: ', id);
+
     const ProductsCollection = await client
     .db("ACSS")
     .collection("Products");
 
-    let moreProducts: any[]= []
-    const product = await ProductsCollection
-        .findOne({_id:new ObjectId(`${id}`)});
+    // let moreProducts: any[]= []
+    const product = await ProductsCollection.findOne({_id:new ObjectId(`${id}`)});
+    // console.log('product: ', product);
+
+
 
         const moreProductsQuery  = await ProductsCollection
         .find({})
         .sort({_id: -1})
         .limit(10)
+        .toArray();
+    // await moreProductsQuery.forEach((doc : any) => {
 
-    await moreProductsQuery.forEach((doc : any) => {
+    //     moreProducts.push(doc)
 
-        moreProducts.push(doc)
-
-    });
+    // });
 
      
     if (!product ) {
@@ -39,7 +43,9 @@ export async function GET(req : NextRequest, res : NextApiResponse) {
     return NextResponse.json({
         success: true,
         product,
-        moreProducts
+        moreProducts: moreProductsQuery
     });
 
 }
+
+export const dynamic = 'force-dynamic'

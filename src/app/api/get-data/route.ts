@@ -13,10 +13,22 @@ try {
     let featuredProducts : any = [];
     let products : any = []
 
-    const featuredProductsQuery = await ProductsCollection
+
+
+
+
+    // ProductsCollection
+    // const featuredProductsQuery = await ProductsCollection
+    //     // .find({isFeatured: true})
+    //     // .find({})
+    //     .limit(50)
+    //     .toArray();
+        const productsQuery = await ProductsCollection
         // .find({isFeatured: true})
         .find({})
-        .limit(30)
+        .limit(80)
+        .toArray();
+        
     // const ProductsQuery = await ProductsCollection
     //     // .find({isFeatured: false})
     //     .find({})
@@ -29,26 +41,40 @@ try {
 
     // });
 
-    await featuredProductsQuery.forEach((doc : any) => {
+    // await featuredProductsQuery.forEach((doc : any) => {
 
-        featuredProducts.push(doc)
+    //     featuredProducts.push(doc)
 
-    })
+    // })
 
-    if (!featuredProducts 
-        
-        // || !products
-         || featuredProducts.length < 0
-        //   || products.length < 0
-          ) {
+
+
+
+    // const vidsCollection = await client.db("ACSS").collection("Videos")
+    //    const docs = await vidsCollection.find({}).limit(20).toArray();
+    //    console.log('docs: ', docs);
+    //   const vids : any[] = [];
+    //    await docs.forEach((prod:any) =>{
+      
+    //           vids.push(prod);
+    //     })
+       
+
+
+
+
+
+
+    if (!featuredProducts || !products || featuredProducts.length < 0 || products.length < 0) {
         return NextResponse.json({success: false});
     }
 
     return NextResponse.json({
         success: true,
         data: {
-            // products,
-            featuredProducts
+            products : productsQuery,
+            featuredProducts : null,
+            vids: null
         }
     });
 }
@@ -60,5 +86,3 @@ catch (error) {
 }
 
 export const dynamic = 'force-dynamic'
-
-// export const revalidate = 600 // revalidate at most every hour
